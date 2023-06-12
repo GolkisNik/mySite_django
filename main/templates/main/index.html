@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} My Website Main Page {% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>{{title}}</h1>
+    <p>
+       Тут короче наш текст. 
+    </p>
+    <button class="btn btn-warning"> About Us </button>
+    {% for el in values %}
+        <p>{{ el }}</p>
+    {% endfor %}
+</div>
+{% endblock %}
